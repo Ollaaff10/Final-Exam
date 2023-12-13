@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Weather App</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <div class="weather-container">
-        <input type="text" id="location-input" placeholder="Enter a city name">
-        <button id="search-btn">Get Weather</button>
-        <div id="weather-result"></div>
+    <div class="search-container">
+        <input type="text" id="location-input" placeholder="Enter country name...">
+        <button onclick="getWeather()">Search</button>
+    </div>
+    <div id="weather-container">
+        <!-- Weather data will be displayed here -->
     </div>
     <script src="script.js"></script>
 </body>
