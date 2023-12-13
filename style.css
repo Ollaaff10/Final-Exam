@@ -1,29 +1,30 @@
-/* Reset some default styles */
+/* Reset default styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Set a background image with a gradient overlay */
+/* Apply a full cover background image with gradient overlay */
 body, html {
     height: 100%;
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(rgba(0, 123, 255, 0.8), rgba(0, 123, 255, 0.8)), url('background-image.jpg');
+    background: linear-gradient(rgba(0, 123, 255, 0.5), rgba(0, 123, 255, 0.5)), url('background-image.png') no-repeat center center fixed;
     background-size: cover;
     color: #333;
 }
 
-/* Center content in the viewport */
+/* Structure and style the main content area */
 main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: calc(100% - 60px); /* Adjust height considering header/footer */
-    text-align: center;
+    height: calc(100% - 60px); /* Adjust height to account for header/footer */
+    padding-top: 60px; /* Ensure main content doesn't overlap with the fixed header */
 }
 
+/* Style the header with a translucent background */
 header {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 10px;
@@ -34,13 +35,14 @@ header {
     z-index: 1000;
 }
 
+/* Header title style */
 h1 {
     color: #007bff;
     font-size: 2rem;
     margin-bottom: 0.5rem;
 }
 
-/* Styling the search box */
+/* Style the search box container */
 .search-box {
     margin: 2rem auto;
     background: rgba(255, 255, 255, 0.9);
@@ -49,6 +51,7 @@ h1 {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Style the search input fields */
 .search-box input[type="text"] {
     padding: 10px;
     border: 2px solid #007bff;
@@ -58,6 +61,7 @@ h1 {
     font-size: 1rem;
 }
 
+/* Style the search button */
 #search-button {
     padding: 10px 20px;
     cursor: pointer;
@@ -69,11 +73,12 @@ h1 {
     transition: background-color 0.3s;
 }
 
+/* Hover effect for the search button */
 #search-button:hover {
     background-color: #0056b3;
 }
 
-/* Weather card styling */
+/* Style the weather information card */
 .weather-card {
     background: rgba(255, 255, 255, 0.9);
     padding: 30px;
@@ -84,7 +89,8 @@ h1 {
     max-width: 600px;
 }
 
-.weather-card h2 {
+/* Style the text inside the weather card */
+.weather-card h2, .weather-card p {
     color: #007bff;
     margin-bottom: 10px;
 }
@@ -92,15 +98,15 @@ h1 {
 .weather-card p {
     font-size: 1.2rem;
     line-height: 1.5;
-    margin-bottom: 10px;
 }
 
+/* Style the weather icon image */
 .weather-card img {
     width: 100px;
     height: auto;
 }
 
-/* Footer styling */
+/* Style the footer with a translucent background */
 footer {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 10px;
@@ -111,6 +117,7 @@ footer {
     z-index: 1000;
 }
 
+/* Style the footer text */
 footer p {
     color: #007bff;
     font-size: 1rem;
