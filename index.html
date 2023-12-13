@@ -1,17 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Forecast</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="search-container">
-        <input type="text" id="location-input" placeholder="Enter country name...">
-        <button onclick="getWeather()">Search</button>
-    </div>
-    <div id="weather-container">
-        <!-- Weather data will be displayed here -->
-    </div>
+    <header>
+        <h1>Weather Forecast Finder</h1>
+    </header>
+    <main>
+        <div class="search-box">
+            <input type="text" id="city-input" placeholder="Enter city name...">
+            <input type="text" id="state-input" placeholder="State code (optional)">
+            <input type="text" id="country-input" placeholder="Country code (optional)">
+            <button id="search-button">Search</button>
+        </div>
+        <div id="weather-info">
+            <!-- Weather data will be dynamically inserted here -->
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Weather App</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
