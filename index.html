@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather Forecast</title>
+    <title>SkySight: Your Weather Companion</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Weather Forecast Finder</h1>
+        <h1>SkySight</h1>
+        <p>Your Weather Companion</p>
     </header>
     <main>
         <div class="search-box">
-            <input type="text" id="city-input" placeholder="Enter city name...">
-            <input type="text" id="state-input" placeholder="State code (optional)">
-            <input type="text" id="country-input" placeholder="Country code (optional)">
+            <input type="text" id="city-input" placeholder="Enter city name..." aria-label="City name">
+            <input type="text" id="state-input" placeholder="State code (optional)" aria-label="State code">
+            <input type="text" id="country-input" placeholder="Country code (optional)" aria-label="Country code">
             <button id="search-button">Search</button>
         </div>
         <div id="weather-info">
@@ -22,7 +23,7 @@
         </div>
     </main>
     <footer>
-        <p>&copy; 2023 Weather App</p>
+        <p>&copy; 2023 SkySight Weather App</p>
     </footer>
     <script src="script.js"></script>
 </body>
